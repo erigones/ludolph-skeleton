@@ -1,7 +1,7 @@
 ludolph-skeleton
 ################
 
-Sample hello world plugin for `Ludolph <https://github.com/erigones/Ludolph>`_
+Sample Hello World plugin for `Ludolph <https://github.com/erigones/Ludolph>`_
 
 .. image:: https://badge.fury.io/py/ludolph-hello-world.png
     :target: http://badge.fury.io/py/ludolph-hello-world
@@ -14,13 +14,13 @@ Installation
 
     pip install ludolph-hello-world
 
-- Update Ludolph configuration file with plugin to load::
+- Add new plugin section into Ludolph configuration file::
 
     [hello_world.base]
 
 - Reload Ludolph::
 
-    ludolph reload
+    service ludolph reload
 
 
 **Dependencies:**

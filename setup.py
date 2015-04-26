@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-# This file is part of Ludolph: hello world plugin
+# This file is part of Ludolph: Hello World plugin
 # Copyright (C) 2015 Erigones, s. r. o.
 #
 # See the LICENSE file for copying permission.
 
-import sys
 import codecs
 try:
     from setuptools import setup
@@ -14,17 +13,14 @@ except ImportError:
     from distutils.core import setup
 
 # noinspection PyPep8Naming
-from hello_world.__init__ import __version__ as VERSION
+from hello_world import __version__ as VERSION
 
-DESCRIPTION = 'Hello world plugin'
+DESCRIPTION = 'Ludolph: Hello World plugin'
 
 with codecs.open('README.rst', 'r', encoding='UTF-8') as readme:
     LONG_DESCRIPTION = ''.join(readme)
 
-if sys.version_info[0] < 3:
-    DEPS = ['ludolph', 'dnspython']
-else:
-    DEPS = ['ludolph', 'dnspython3']
+DEPS = ['ludolph']
 
 CLASSIFIERS = [
     'Environment :: Console',
