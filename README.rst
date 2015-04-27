@@ -1,13 +1,15 @@
 ludolph-skeleton
 ################
 
-Sample Hello World plugin for `Ludolph <https://github.com/erigones/Ludolph>`_
+`Ludolph <https://github.com/erigones/Ludolph>`_: Hello World plugin
+
+Sample plugin that provides directory structure for Ludolph plugins and example of basic commands.
 
 .. image:: https://badge.fury.io/py/ludolph-hello-world.png
     :target: http://badge.fury.io/py/ludolph-hello-world
 
 
-Installation
+Installationt 
 ------------
 
 - Install the latest released version using pip::
