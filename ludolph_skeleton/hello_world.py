@@ -12,9 +12,9 @@ from ludolph.command import command, parameter_required, admin_required
 from ludolph.plugins.plugin import LudolphPlugin
 
 
-class Base(LudolphPlugin):
+class HelloWorld(LudolphPlugin):
     """
-    Ludolph: Hello world plugin commands.
+    Ludolph: Skeleton, Hello World plugin commands.
 
     Sample plugin with 3 commands. Each showing how you can use Ludolph decorators in your plugins.
     """
@@ -48,8 +48,8 @@ class Base(LudolphPlugin):
     @command
     def hello_version(self, msg):
         """
-        Show version of Ludolph: Hello World plugin (admin only).
+        Show version of Ludolph: Skeleton, Hello World plugin (admin only).
 
         Usage: hello-version
         """
-        return 'Ludolph: Hello World plugin version: ' + __version__
+        return 'Ludolph: Skeleton, Hello World plugin version: ' + __version__
