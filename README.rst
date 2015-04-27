@@ -18,7 +18,7 @@ Installation
 
 - Add new plugin section into Ludolph configuration file::
 
-    [hello_world.base]
+    [ludolph_hello_world.base]
 
 - Reload Ludolph::
 

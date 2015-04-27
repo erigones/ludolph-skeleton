@@ -13,7 +13,7 @@ except ImportError:
     from distutils.core import setup
 
 # noinspection PyPep8Naming
-from hello_world import __version__ as VERSION
+from ludolph_hello_world import __version__ as VERSION
 
 DESCRIPTION = 'Ludolph: Hello World plugin'
 
@@ -40,7 +40,7 @@ CLASSIFIERS = [
 ]
 
 packages = [
-    'hello_world',
+    'ludolph_hello_world',
 ]
 
 setup(
