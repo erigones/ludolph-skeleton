@@ -9,7 +9,7 @@ Sample plugin that provides directory structure for Ludolph plugins and example 
     :target: http://badge.fury.io/py/ludolph-hello-world
 
 
-Installationt 
+Installation
 ------------
 
 - Install the latest released version using pip::
