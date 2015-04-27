@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-# This file is part of Ludolph: Hello World plugin
+# This file is part of Ludolph: Skeleton plugin
 # Copyright (C) 2015 Erigones, s. r. o.
 #
 # See the LICENSE file for copying permission.
@@ -13,9 +13,9 @@ except ImportError:
     from distutils.core import setup
 
 # noinspection PyPep8Naming
-from ludolph_hello_world import __version__ as VERSION
+from ludolph_skeleton import __version__ as VERSION
 
-DESCRIPTION = 'Ludolph: Hello World plugin'
+DESCRIPTION = 'Ludolph: Skeleton plugin'
 
 with codecs.open('README.rst', 'r', encoding='UTF-8') as readme:
     LONG_DESCRIPTION = ''.join(readme)
@@ -40,11 +40,11 @@ CLASSIFIERS = [
 ]
 
 packages = [
-    'ludolph_hello_world',
+    'ludolph_skeleton',
 ]
 
 setup(
-    name='ludolph-hello-world',
+    name='ludolph-skeleton',
     version=VERSION,
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,

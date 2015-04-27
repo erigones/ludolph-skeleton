@@ -1,5 +1,5 @@
 """
-This file is part of Ludolph: Hello World plugin
+This file is part of Ludolph: Skeleton plugin
 Copyright (C) 2015 Erigones, s. r. o.
 
 See the LICENSE file for copying permission.
@@ -7,7 +7,7 @@ See the LICENSE file for copying permission.
 import time
 
 # noinspection PyPep8Naming
-from ludolph_hello_world import __version__
+from ludolph_skeleton import __version__
 from ludolph.command import command, parameter_required, admin_required
 from ludolph.plugins.plugin import LudolphPlugin
 
