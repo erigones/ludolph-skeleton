@@ -7,7 +7,7 @@ See the LICENSE file for copying permission.
 import time
 
 # noinspection PyPep8Naming
-from hello_world import __version__
+from ludolph_hello_world import __version__
 from ludolph.command import command, parameter_required, admin_required
 from ludolph.plugins.plugin import LudolphPlugin
 
