@@ -3,7 +3,7 @@ ludolph-skeleton
 
 `Ludolph <https://github.com/erigones/Ludolph>`_: Skeleton plugin
 
-Sample plugin that provides directory structure for Ludolph plugins and example of basic commands.
+Sample plugin that provides directory structure for Ludolph plugins and basic command examples.
 
 .. image:: https://badge.fury.io/py/ludolph-skeleton.png
     :target: http://badge.fury.io/py/ludolph-skeleton
@@ -27,7 +27,7 @@ Installation
 
 **Dependencies:**
 
-- `Ludolph <https://github.com/erigones/Ludolph>`_ (0.5.1+)
+- `Ludolph <https://github.com/erigones/Ludolph>`_ (0.6.0+)
 
 
 Links
