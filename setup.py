@@ -20,7 +20,7 @@ DESCRIPTION = 'Ludolph: Skeleton plugin'
 with codecs.open('README.rst', 'r', encoding='UTF-8') as readme:
     LONG_DESCRIPTION = ''.join(readme)
 
-DEPS = ['ludolph']
+DEPS = ['ludolph>=0.6.0']
 
 CLASSIFIERS = [
     'Environment :: Console',
