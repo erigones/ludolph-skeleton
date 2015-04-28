@@ -18,6 +18,8 @@ class HelloWorld(LudolphPlugin):
 
     Sample plugin with 3 commands. Each showing how you can use Ludolph decorators in your plugins.
     """
+    __version__ = __version__
+
     # noinspection PyUnusedLocal
     @command
     def hello_world(self, msg):
@@ -46,10 +48,10 @@ class HelloWorld(LudolphPlugin):
     # noinspection PyUnusedLocal
     @admin_required
     @command
-    def hello_version(self, msg):
+    def hello_admin(self, msg):
         """
-        Show version of Ludolph: Skeleton, Hello World plugin (admin only).
+        Hello Admin greeting (admin only).
 
-        Usage: hello-version
+        Usage: hello-admin
         """
-        return 'Ludolph: Skeleton, Hello World plugin version: ' + __version__
+        return 'Hi, I am the Hello Admin plugin reply!'
