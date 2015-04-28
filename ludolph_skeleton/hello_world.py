@@ -6,9 +6,8 @@ See the LICENSE file for copying permission.
 """
 import time
 
-# noinspection PyPep8Naming
 from ludolph_skeleton import __version__
-from ludolph.command import command, parameter_required, admin_required
+from ludolph.command import command, parameter_required
 from ludolph.plugins.plugin import LudolphPlugin
 
 
@@ -46,8 +45,7 @@ class HelloWorld(LudolphPlugin):
             time.sleep(0.3)
 
     # noinspection PyUnusedLocal
-    @admin_required
-    @command
+    @command(admin_required=True)
     def hello_admin(self, msg):
         """
         Hello Admin greeting (admin only).
