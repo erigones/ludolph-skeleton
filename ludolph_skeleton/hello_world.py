@@ -7,7 +7,7 @@ See the LICENSE file for copying permission.
 import time
 
 from ludolph_skeleton import __version__
-from ludolph.command import command, parameter_required
+from ludolph.command import CommandError, command
 from ludolph.plugins.plugin import LudolphPlugin
 
 
@@ -30,7 +30,6 @@ class HelloWorld(LudolphPlugin):
         return 'Hi, I am the Hello World plugin reply!'
 
     # noinspection PyUnusedLocal
-    @parameter_required(1)
     @command(stream_output=True)
     def hello_repeat(self, msg, *args):
         """
@@ -38,8 +37,11 @@ class HelloWorld(LudolphPlugin):
         Repeat all parameters passed to command, each in separate reply message.
         First parameter is required.
 
-        Usage: hello-repeat <param1> [param2] [param3] [paramN]
+        Usage: hello-repeat [param1] [param2] [param3] [paramN]
         """
+        if not args:
+            raise CommandError('You gave me nothing to repeat :(')
+
         for arg in args:
             yield 'I have received parameter: "%s"' % arg
             time.sleep(0.3)
