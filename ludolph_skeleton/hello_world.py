@@ -6,9 +6,9 @@ See the LICENSE file for copying permission.
 """
 import time
 
-from ludolph_skeleton import __version__
 from ludolph.command import CommandError, command
 from ludolph.plugins.plugin import LudolphPlugin
+from . import __version__
 
 
 class HelloWorld(LudolphPlugin):

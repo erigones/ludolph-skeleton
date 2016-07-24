@@ -2,11 +2,12 @@
 # -*- coding: utf-8 -*-
 #
 # This file is part of Ludolph: Skeleton plugin
-# Copyright (C) 2015 Erigones, s. r. o.
+# Copyright (C) 2015-2016 Erigones, s. r. o.
 #
 # See the LICENSE file for copying permission.
 
 import codecs
+
 try:
     from setuptools import setup
 except ImportError:
@@ -39,10 +40,6 @@ CLASSIFIERS = [
     'Topic :: Utilities'
 ]
 
-packages = [
-    'ludolph_skeleton',
-]
-
 setup(
     name='ludolph-skeleton',
     version=VERSION,
@@ -52,7 +49,7 @@ setup(
     author_email='erigones [at] erigones.com',
     url='https://github.com/erigones/ludolph-skeleton/',
     license='MIT',
-    packages=packages,
+    packages=['ludolph_skeleton'],
     install_requires=DEPS,
     platforms='any',
     classifiers=CLASSIFIERS,
